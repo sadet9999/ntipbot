@@ -1,4 +1,4 @@
-<?php // callback.php
+﻿<?php // callback.php
 // กรณีต้องการตรวจสอบการแจ้ง error ให้เปิด 3 บรรทัดล่างนี้ให้ทำงาน กรณีไม่ ให้ comment ปิดไป
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -110,7 +110,13 @@ if(!is_null($events)){
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);
                     break;
-                case "s":
+                case "jo":
+					$placeName = "my name jo";
+                    $stickerID = 22;
+                    $packageID = 2;
+                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
+                    break;
+				case "j":
                     $stickerID = 22;
                     $packageID = 2;
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
