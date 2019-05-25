@@ -95,7 +95,7 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
 				
-				case "User Request":
+				case "user request":
                     $textReplyMessage = "https://tbcmthailand.ddc.moph.go.th/uiform/User_Request.aspx";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
