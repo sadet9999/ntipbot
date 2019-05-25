@@ -74,8 +74,8 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-                case "หน้าเว็บไซต์":
-                    $url = 'https://tbcmthailand.ddc.moph.go.th/uiform/login.aspx';
+                case "fix":
+                    $url = 'https://itddc.herokuapp.com/api.php';
                     $data = call_api($url);
                     foreach ($data as $value) {
                       $text_test[] = $value->id.'<>'.$value->fixdetail;
