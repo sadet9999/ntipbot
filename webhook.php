@@ -90,6 +90,13 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
 				
+				case "ผู้ดูแลระบบ":
+                    $textReplyMessage = "1.คุณสุทธา วัติรางกูล  แก้ไขปัญหาโปรแกรม และ Database System โทร.095-9606343";
+					$textReplyMessage = "2.คุณเสด็จ เบ้าทุมมา  แก้ไขปัญหาโปรแกรม และ Database System โทร.099-1858884";
+					$textReplyMessage = "3.คุณวิศรุต วัยวัฒนะ  แก้ไขปัญหาโปรแกรม และ Database System โทร.090-8142260";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
+				
                 case "t":
 
                     $textReplyMessage = "Bot ตอบคุณด้วยข้อความ";
