@@ -89,6 +89,13 @@ if(!is_null($events)){
                     $textReplyMessage = "Bot ตอบคุณด้วยข้อความ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+				
+				case "jo":
+
+                    $textReplyMessage = "my name jo";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
+				
                 case "i":
                     $picFullSize = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower';
                     $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower/240';
@@ -110,8 +117,9 @@ if(!is_null($events)){
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);
                     break;
-                case "jo":
-					$placeName = "my name jo";
+                case "1":
+					$placeName = "jo";
+					$placeAddress = "my name jo";
                     $stickerID = 22;
                     $packageID = 2;
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
