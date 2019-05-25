@@ -74,8 +74,8 @@ if(!is_null($events)){
     switch ($typeMessage){
         case 'text':
             switch ($userMessage) {
-                case "fix":
-                    $url = 'https://itddc.herokuapp.com/api.php';
+                case "หน้าเว็บไซต์":
+                    $url = 'https://tbcmthailand.ddc.moph.go.th/uiform/login.aspx';
                     $data = call_api($url);
                     foreach ($data as $value) {
                       $text_test[] = $value->id.'<>'.$value->fixdetail;
@@ -117,19 +117,7 @@ if(!is_null($events)){
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);
                     break;
-                case "1":
-					$placeName = "jo";
-					$placeAddress = "my name jo";
-                    $stickerID = 22;
-                    $packageID = 2;
-                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;
-				case "jo1":
-					$placeName = "ทดสอบ1";
-                    $stickerID = 22;
-                    $packageID = 2;
-                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;
+                
 				case "j":
                     $stickerID = 22;
                     $packageID = 2;
