@@ -84,6 +84,12 @@ if(!is_null($events)){
                     $textReplyMessage = $text2;
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+					
+				case "ntip":
+                    $textReplyMessage = "ntip ย่อมาจาก national tuberculosis information program";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
+				
                 case "t":
 
                     $textReplyMessage = "Bot ตอบคุณด้วยข้อความ";
