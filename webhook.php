@@ -116,6 +116,12 @@ if(!is_null($events)){
                     $packageID = 2;
                     $replyData = new StickerMessageBuilder($packageID,$stickerID);
                     break;
+				case "jo1":
+					$placeName = "ทดสอบ1";
+                    $stickerID = 22;
+                    $packageID = 2;
+                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
+                    break;
 				case "j":
                     $stickerID = 22;
                     $packageID = 2;
