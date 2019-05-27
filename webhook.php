@@ -99,6 +99,11 @@ if(!is_null($events)){
                     $textReplyMessage = "https://tbcmthailand.ddc.moph.go.th/uiform/login.aspx";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
+					
+				case "เข้าหน้าระบบ":
+                    $textReplyMessage = "https://tbcmthailand.ddc.moph.go.th/uiform/login.aspx";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
 				
 				case "log in":
                     $textReplyMessage = "https://tbcmthailand.ddc.moph.go.th/uiform/login.aspx";
