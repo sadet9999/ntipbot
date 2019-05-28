@@ -130,6 +130,14 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
 				
+				case "ระบาดวิทยา":                    
+					$textReplyMessage = 
+					"
+					กลุ่มงานระบาดวิทยาฯ สำนักวัณโรค กรมควบคุมโรค
+					";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
+				
 				case "สปสช":                    
 					$textReplyMessage = 
 					"
